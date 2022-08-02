@@ -3,31 +3,15 @@ import csv
 
 def get_input_to_calculate_bmi():
     "This function gets the input from the user"
-    # Getting input will be repeated until the user enters the proper input
-    while True:
         print("Enter the weight of the user in Kg's")
-        # Get the input from the user and check it's of correct type
-        try:        
-            weight_of_the_user = float(input())
-            # isintance will check the type of the input and returns true/false
-            if isinstance(weight_of_the_user,float):
-                break 
-        # If user inputs wrong type then the except will run
-        except ValueError:
-            print("The value you have entered is not a float value.Please enter the input in float value and in kilograms")
-        
-    # Get the height of the user through keyboard
-    while True:
+        # function get the weight of user
+        weight_of_the_user = float(input())
+           
+    "This function gets the input from user"
         print("Enter the height of the user in cm")
-        try:        
+        # Get the height of the user through keyboard
             height_of_the_user = float(input())
-            if isinstance(height_of_the_user,float):
-                break 
-        except ValueError:
-            print("The value you have enteed is not a float value.Please enter the input in float value and in meters")  
-        
-    return weight_of_the_user,height_of_the_user
-
+            
 def calculate_bmi(weight_of_the_user,height_of_the_user):
     "This function calculates the bmi"
     # Calculate the BMI of the user according to height and weight
