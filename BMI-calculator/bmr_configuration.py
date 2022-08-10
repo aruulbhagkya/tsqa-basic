@@ -4,22 +4,15 @@
  The BMR Calculator:
     # Get the Age of the user
     # Get the Gender of the user
-    # Get the weight(Kg/lb) of the user
-    # Get the height(m/in") of the user
+    # Get the weight(Kg) of the user
+    # Get the height(cm) of the user
     # Calculate the BMI using the formula on the basis of gender, age, height and weight
        For Male: BMR= 88.362+(13.397*weight in kg/lb)+(4.799*height in cm/in")- (5.677*age in years)
        For Female: BMR = 447.593+(9.247*weight in kg/ib)+(3.098*height in cm/in")- (4.330*age in years)
-       Also, this BMR calculator include features in Metric Units (kg,metre) & American Units (pound, inch)
+       
 
 Exercise 1: Calculate the BMR (in calorie)
-Exercise 2: Check if the no. of days workout the user does:
-            No. of Days       BMR *Value      Level of Intensity
-                0-1             BMR*1.2         NO Exercise
-                1-3            BMR*1.375       Light Exercise
-                3-5            BMR*1.55       Moderate Exercise
-              All Day          BMR*1.725       Heavy Exercise
-Here there will be an implication of User-defined functions and Calling function along with if else statement.
-"""
+Exercise 2: Creating Configuration file for BMR
 
 from configparser import ConfigParser
 
