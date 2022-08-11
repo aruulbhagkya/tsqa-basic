@@ -33,7 +33,7 @@ import os
 import csv 
 class BMI():
 
-    #Defining the initiating the method
+#Defining the initiating the method
     def __init__(self ,weight ,height):
         self.weight = weight
         self.height = height
@@ -41,24 +41,23 @@ class BMI():
 #Calculating BMI
     def calculate_BMI(self):
         return (int(self.weight/(self.height/100)**2))
-
 #Weight input
 weight=int(input("Enter the weight in kg : "))
 #Height input
 height=int(input("Enter the weight in cenimeter : "))
 
-obj = BMI(weight,height)
-x= obj.calculate_BMI()
-print("BMI of user is : ",x)
+calculator= BMI(weight,height)
+user_BMI= calculator.calculate_BMI()
+print("BMI of user is : ",user_BMI)
 
  
-if x <= 18.5:
+if user_BMI<= 18.5:
      print("The user is considered as underweight")
-elif x > 18.5 and x < 24.9:
+elif user_BMI> 18.5 and user_BMI < 24.9:
          print("The user is considered as normal weight")
-elif x > 25 and x <= 29.9:
+elif user_BMI > 25 and user_BMI <= 29.9:
         print("The user is considered as overweight")
-elif x>=30:
+elif user_BMI>=30:
         print("The user is considered as obese")
 
 filename = os.path.abspath(os.path.join(os.path.dirname(__file__),'..','data',"celebrity.csv"))
@@ -69,7 +68,7 @@ with open(filename,"r") as fp:
         for i, row in enumerate(csv_file):
             bmi_value_in_row = row[3]
             celebrity_name = row[0]    
-            if int(bmi_value_in_row) == x:
+            if int(bmi_value_in_row) == user_BMI:
                 matched_celebrity.append({celebrity_name})
 if not matched_celebrity:
         print("No matching data")
