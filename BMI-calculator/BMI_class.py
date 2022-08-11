@@ -1,3 +1,34 @@
+"""
+We will use this script to learn Python to absolute beginners
+The script is an example of BMI_Calculator implemented in Python
+The BMI_Calculator: 
+    # Get the weight(Kg) of the user
+    # Get the height(m) of the user
+    # Caculate the BMI using the formula
+        BMI=weight in kg/height in meters*height in meters
+
+Exercise3 :
+        Write a program to calculate the BMI by accepting user input from the keyboard and check whether the user comes
+        in underweight ,normal weight or obesity by creating a class. Read the CSV files which contains celebrity data 
+        and compare your BMI with a celebrity.Create class for getting input from the user,calculating BMI and check 
+        the user category.While getting input check the value you entered is of correct type if not 
+        your program should not get crashed.
+       
+            i)Get user weight in kg 
+            ii)Get user height in centimeter
+            iii) Use this formula to calculate the BMI
+                    BMI = weight_of_the_user/(height_of_the_user/100)**2)
+            iv)Use this level to check user category
+                #)Less than or equal to 18.5 is represents underweight
+                #)Between 18.5 -24.9 indicate normal weight
+                #)Between 25 -29.9 denotes over weight
+                #)Greater than 30 denotes obese
+        # Hint
+            i)Create a class to get the input from the user 
+            ii)Calculate the BMI
+            iii)Check the BMI with celebrity BMI by reading the CSV file and display the  matched celebrity name.
+
+"""
 import os 
 import csv 
 class BMI():
